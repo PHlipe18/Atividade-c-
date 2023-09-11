@@ -1,0 +1,35 @@
+1. Dentro da orientação a objeto, o que é instanciar uma classe?
+2. Quando uma classe A tem um relacionamento de um para um com a classe B, o
+que isso quer dizer? Cite um exemplo
+3. Qual a diferença de um método público e de um método privado?
+
+resposta:
+
+1. **Instanciar uma classe:** Significa criar um objeto a partir de uma classe. Isso permite que você use as características (propriedades e métodos) dessa classe para realizar ações.
+
+2. **Relacionamento de um para um entre classes A e B:** Isso significa que cada objeto da classe A está associado a um objeto da classe B, e vice-versa. Por exemplo, cada pessoa tem um único endereço, e cada endereço pertence a uma única pessoa.
+
+3. **Diferença entre método público e método privado:**
+   - **Método público:** Pode ser chamado de fora da classe e é usado para disponibilizar funcionalidades da classe para outras partes do programa.
+   - **Método privado:** Só pode ser chamado dentro da própria classe e é usado para encapsular funcionalidades internas da classe, ocultando-as do acesso externo.
+
+Exemplo:
+
+```csharp
+public class MinhaClasse
+{
+    private int numeroPrivado; // Variável privada
+
+    public void MetodoPublico()
+    {
+        // Este método pode ser usado fora da classe
+    }
+
+    private void MetodoPrivado()
+    {
+        // Este método só pode ser usado dentro da classe
+    }
+}
+```
+
+Neste exemplo, `MetodoPublico` pode ser chamado de fora da classe, enquanto `MetodoPrivado` só pode ser chamado dentro da classe.
